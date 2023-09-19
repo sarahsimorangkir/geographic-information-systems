@@ -1,0 +1,52 @@
+.sidebarDetail {
+    width: 300px;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.67);
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: width .5s ease-in-out;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.sidebarDetail.hide{
+   width: 0;
+    padding: 0;
+    margin: 0;
+    transition: width .5s ease-in-out;
+}
+
+.sidebarDetail > .header {
+    height: 60px;
+    width: 100%;
+    background: #1a5b91;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.sidebarDetail > .header > p {
+    font-size: 20px;
+    color: white;
+}
+
+.sidebarDetail > .body {
+    padding: 20px 20px;
+    height: calc(100vh - 60px - 40px);
+}
+
+.sidebarDetail > .footer {
+    height: 40px;
+}
+.sidebarDetail > .footer > button {
+    width: 100%;
+    border: none;
+    background: #671309;
+    height: 100%;
+    color: white;
+    font-size: 20px;
+}
+
+.sidebarDetail > .footer > button:active {
+    background: #9f1f10;
+}

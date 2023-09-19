@@ -1,0 +1,45 @@
+.buttonColor {
+    border-radius: 5px;
+    height: 30px;
+    min-width: 80px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.buttonColor.success {
+    background: var(--success-color);
+    border-color: var(--success-dark-color);
+    color: white;
+}
+
+.buttonColor.success:active {
+    background: var(--success-dark-color);
+}
+
+.buttonColor.primary {
+    background: var(--primary-color);
+    border-color: var(--primary-dark-color);
+    color: white;
+}
+
+.buttonColor.primary:active {
+    background: var(--primary-dark-color);
+}
+
+.buttonColor.info {
+    background: var(--info-color);
+    border-color: var(--info-dark-color);
+    color: white;
+}
+.buttonColor.info:active {
+    background: var(--info-dark-color);
+}
+.buttonColor.grey{
+    background: var(--dark-grey-color);
+    border-color: var(--grey-color);
+    color: white;
+}
+
+.buttonColor.grey:active {
+    background: var(--grey-color);
+}

@@ -1,0 +1,46 @@
+.choicesType {
+    background: rgba(30, 29, 29, 0.9);
+    height: 50px;
+    min-width: 100px;
+    position: absolute;
+    bottom: 70px;
+    left: 25px;
+    border-radius: 5px;
+    display: flex;
+}
+
+.choicesType.hide {
+    display: none;
+}
+.choicesType > .item {
+    width: 60px;
+    padding: 5px 5px;
+    cursor: pointer;
+}
+
+.choicesType > .item::after {
+    position: absolute;
+    width: 4px;
+    content: " ";
+    height: 40px;
+    left: 60px;
+    top: 5px;
+    background: white;
+
+}
+.choicesType > .item > div {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.choicesType > .item > div > img {
+    width: 70%;
+    height: 70%;
+}
+
+.choicesType > .item:last-child::after {
+    content: "";
+    width: 0;
+    height: 0;
+}

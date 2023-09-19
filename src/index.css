@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --success-color: #3fa141;
+  --success-dark-color: #3fa141;
+  --primary-color: #2273b6;
+  --primary-dark-color: #1a5b91;
+  --info-color: #2e9cf6;
+  --info-dark-color: #2783ce;
+  --grey-color: #d9d9d9;
+  --dark-grey-color: #757575;
+}

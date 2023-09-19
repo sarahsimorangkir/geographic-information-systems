@@ -1,0 +1,61 @@
+.modalForm {
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 400px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.86);
+    overflow: hidden;
+}
+
+.modalForm.hide {
+    display: none;
+}
+
+.modalForm > .modalHeader {
+    height: 40px;
+    background: darkslategrey;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 23px;
+    padding: 0 20px;
+}
+
+.modalForm > .modalBody {
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.modalForm > .modalBody > .leftSide {
+    flex-grow: 1;
+}
+
+.modalForm > .modalBody > .rightSide {
+    flex-grow: 2;
+}
+
+.itemInput {
+    height: 40px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.itemButton {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.itemInput > input {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid black;
+    height: 30px;
+    padding: 5px 10px;
+}

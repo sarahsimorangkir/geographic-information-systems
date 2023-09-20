@@ -2,7 +2,7 @@
 
 flow : 
 There are 2 ways to find a location and information:
-1. - Mark the location on the map that you want to display using the mark that already provided (X red symbols)
+1. - Mark the location on the map that you want to display, then will marked with red X  symbol
    - Click add button (+) -> choose GIS type (ship or plane)
    - Latitude and longitude will automatically filled in the input field  based on choosen location
 

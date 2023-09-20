@@ -16,6 +16,7 @@ const containerStyle = {
 };
 
 function App() {
+    // load the google maps API and check if it's loaded
     const {isLoaded} = useJsApiLoader({
         googleMapsApiKey: process.env.REACT_APP_GOOGLE_API_KEY,
         id: 'google-map-script',
@@ -48,7 +49,7 @@ function App() {
     const handleOnClickButtonAdd = (event) => {
         setShowChoices(!showChoices);
     }
-
+    //handle a choice click and open the modal form
     const handleOnClickChoice = (event, value) => {
         if (selectedLocation !== null) {
             setDetailSelected({
@@ -75,11 +76,15 @@ function App() {
     const closeModal = (event) => {
         setShowModal(false);
     }
+
+    //callback function after submitting the form
     const clbAfterSubmit = (res) => {
         setMarkers([...markers, res]);
+        // update markers with the new result
         setShowModal(false);
         setShowChoices(false);
         setSelectedLocation(null);
+        // update the center of the map to the new marker
         setCenter({
             lat: res.additional_info.features[0].geometry.coordinates[0],
             lng: res.additional_info.features[0].geometry.coordinates[1],

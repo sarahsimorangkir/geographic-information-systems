@@ -11,6 +11,7 @@ export default function ModalForm({type, points, showModal, afterSubmit, cancel,
         alt: 0,
         type: "",
     });
+
     useEffect(() => {
         setFormField({
             name: "",
@@ -20,12 +21,13 @@ export default function ModalForm({type, points, showModal, afterSubmit, cancel,
             type: type
         });
     }, [points, type]);
+
     const handleOnSubmit = async (event) => {
-        console.log(formField)
         await addTrack(formField, (res)=> {
             afterSubmit(res);
         })
     }
+    
     const handleOnChange = (event) => {
         const {value, name} = event.target;
         setFormField({
@@ -42,7 +44,7 @@ export default function ModalForm({type, points, showModal, afterSubmit, cancel,
             </div>
             <div className={styles.modalBody}>
                 <div className={styles.leftSide}>
-                    <div className={styles.itemInput}>
+                    <div className={styles.itemInput} >
                         Name
                     </div>
                     <div className={styles.itemInput}>

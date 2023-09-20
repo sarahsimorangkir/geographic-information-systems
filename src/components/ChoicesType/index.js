@@ -8,6 +8,8 @@ export default function ChoicesType({onClick = (event, value)=> {},showTypes = t
         {type: "ship", image: Ship},
         {type: "plane", image: Plane},
     ]);
+
+    //render element based on the showTypes prop
     return <div className={`${styles.choicesType} ${showTypes ? '': styles.hide}`}>
         {types.map((value, index) => (
             <div key={`card-${index}`} className={styles.item}>

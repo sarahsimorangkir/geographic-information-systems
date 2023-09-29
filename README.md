@@ -1,4 +1,4 @@
-# GIS App - Sarah Simorangkir
+# GIS (Geographic Information Systems) App 
 
 flow : 
 There are 2 ways to find a location and information:
